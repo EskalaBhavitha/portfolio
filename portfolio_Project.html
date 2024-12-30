@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            background-color: grey;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, main, footer {
+            padding: 5px;
+            border-radius: 5px;
+            background-color: lightskyblue;
+            margin: 5px;
+        }
+        header {
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+        }
+        .block{
+            width: 100%;
+            padding: 5px;
+            display: inline-block;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 5px;
+            background-color: white;
+            margin: 5px;    
+        }
+        .container2{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 5px;
+            margin: 5px; 
+            justify-content: center;
+            background-color: white; 
+        }
+        .project-link:hover {
+            text-decoration: underline;
+        }
+        .circle-img {
+            width: 150px; 
+            height: 150px; 
+            border-radius: 50%; 
+            object-fit: cover; 
+        }
+        .image-container, .info-container { 
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Task_portfolio</h1>
+    </header>
+    <div class="container">
+        <div class="image-container">
+            <img src="C:\Users\bhavi\OneDrive\Pictures\Bhavitha_photo-213t1a3211.jpg" alt="Circular Image" class="circle-img">
+        </div>
+        <div class="info-container">
+            <ul><li>My name is Eskala Bhavitha,currently pursuing in the CDS branch at RCEW College, With a good foundation in programming languages like C, Python, Java, and C++. I am passionate about leveraging technology to solve real-world problems.</li></ul>
+            <ul><p1><b>Skills:</b></p1></ul>
+            <ul>
+                <li>Project Management</li>
+                <li>Leadership, interpersonal and communication skills</li>
+                <li>Ability to communicate with others, solving problems or thinking creatively </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <!-- First Container -->
+        <div class="container2">
+          <h2>Project Title 1 - Text Classification</h2>
+          <p>This project implements a text classification system using machine learning algorithms like Naive Bayes and SVM to categorize text data into predefined classes. It leverages natural language processing techniques for applications such as spam detection and sentiment analysis.</p>
+          <a href="https://github.com/EskalaBhavitha/Text_Classification-" class="project-link" target="_blank">View Project</a>
+        </div>
+    
+        <!-- Second Container -->
+        <div class="container2">
+          <h2>Project Title 2 - Vision Transformer</h2>
+          <p>This project implements a Vision Transformer (ViT) for image classification, using transformer architectures to process image patches instead of traditional CNNs. It aims to achieve high accuracy and efficiency in tasks like object detection and image recognition.</p>
+          <a href="https://github.com/EskalaBhavitha/Vision-Transformer" class="project-link" target="_blank">View Project</a>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="block">
+            <h4>Hobbies:</h4>
+            <ul><li>Web browsing and Travelling to explore new things and other interests such as Art and Craft, Drawing.</li></ul>
+        </div>
+        <div class="block">
+            <h4>Strengths:</h4>
+            <ul>
+                <li>Hardworking and willing to make new challenges.</li>
+                <li>Possessing a Positive attitude, self-confidence and hard worker and Fast Learner.</li>
+            </ul>
+        </div>
+        <div class="block">
+            <h3>Contact Information:</h3>
+                <form action="https://github.com/EskalaBhavitha/portfolio" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <br><br>
+                    <label for="phone">Phone No:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890" pattern="(\+?\d{1,2}\s?)?(\(?\d{3}\)?[-.\s]?)?\d{3}[-.\s]?\d{4}" required>
+                    <br><br>
+                    <button type="submit">Send Message</button>
+                </form>
+        </div>
+    </div>
+    <footer>
+        <b><h>Thank you!</h></b>
+    </footer>
+</body>
+</html>
+
